@@ -13,9 +13,9 @@
     "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod"
   },
-  "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
+  "dependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@babel/runtime": "^7.11.2",
