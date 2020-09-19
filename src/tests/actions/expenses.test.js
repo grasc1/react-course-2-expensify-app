@@ -23,7 +23,6 @@ beforeEach((done) => {
     database.ref('expenses').set(expensesData).then(() => done());
 });
 
-
 // REMOVE TEST CASES
 
 test('should setup remove expense action object', () => {
@@ -151,7 +150,7 @@ test('should setup set expense action object with data', () => {
     })
 });
 
-test('should fetch the expenses from firebase', () => {
+test('should fetch the expenses from firebase', (done) => {
     const store = createMockStore({});
     store.dispatch(startSetExpenses()).then(() => {
         const actions = store.getActions();
